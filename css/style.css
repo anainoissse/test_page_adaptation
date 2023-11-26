@@ -9,6 +9,7 @@ body {
 .header {
     background-image: url(../img/bg.jpg);
     background-color: rgba(0, 0,0, 0.3);
+    background-position: center;
     background-blend-mode: overlay;
     height: 100vh;
     background-repeat: no-repeat;
@@ -17,30 +18,25 @@ body {
 
 
 .header-down{
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
 }
 
 .header-title {
     max-width:50%;
     color: coral;
     background-color: rgba(0, 0,0, 0.8);
-    background-blend-mode: overlay;
     font-size: 50px;
     font-weight: 600;
-    padding:30px 0px;
+    padding:30px 10px;
     font-family: 'Raleway', sans-serif;
     text-align:center;
-    margin: 0;
-    position: absolute;
-    top: 30%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, 80%);
 }
 
 .header-subtitle {
     color: coral;
-    /* ПОДУМАТЬ НАД ШРИФТАМИ*/
     font-size: 40px;
     font-weight: 300;
     font-family: 'Raleway', sans-serif;
@@ -78,6 +74,8 @@ body {
 }
 
 .basement {
+    display: flex;
+    flex-direction: column;
     height: 30vh;
     padding: 30px;
     background-color:black;
@@ -104,17 +102,10 @@ background: -ms-linear-gradient(top,   antiquewhite,chocolate);
     margin:0px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
-    grid-template-rows: repeat(1, 1fr);
     align-items: center;
     justify-items: center;
-    min-height: -webkit-fit-content;
-    min-height: -moz-fit-content;
-    min-height: fit-content;
     max-width: 80%;
 }
-
-.t1 .right_side{
-padding:0 20 20 20;}
 
 .t1 .rs-text{
     color:brown;
@@ -124,24 +115,15 @@ padding:0 20 20 20;}
     font-family: 'Raleway', sans-serif;
 }
 
-.t1 .left_side{
-border-radius:10px 0px 0px 10px;}
-
-
 .map{
-    height: 90vh;
-    padding: 100px 200px;
+    padding: 0px;
     background-color:chocolate;
 }
-
-.col{display: inline-grid; position: relative;}
 
 .bigblock{
 width: 100%; 
 padding: 10px 20px 20px 20px;
 height: auto;
-color: #004077; 
-font-size: 16px;
 box-sizing: border-box;
 }
 
@@ -154,9 +136,7 @@ width:90%;
 height: auto;
 padding: 20px;
 margin: 10px auto;
-/*background: black;*/
     background-color: rgba(0, 0,0, 0.7);
-    background-blend-mode: overlay;
 box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 border-radius:20px;
 }
@@ -188,11 +168,10 @@ border-radius:20px;
 
 .hat{
     height:15vh;
-    background-color: rgba(0, 0,0, 0.7);
+    background-color: rgba(0, 0,0, 0.8);
     background-blend-mode: overlay;
     padding: 0px 100px;
     display:flex;
-    justify-content: space-between;
     align-items: center;
-    margin-left: auto;
+    min-width: 250px;
 }
