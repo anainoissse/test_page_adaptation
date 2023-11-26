@@ -76,7 +76,7 @@ body {
 .basement {
     display: flex;
     flex-direction: column;
-    height: 30vh;
+    height: auto;
     padding: 30px;
     background-color:black;
     color: aliceblue;
