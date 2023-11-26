@@ -167,7 +167,7 @@ border-radius:20px;
 }
 
 .hat{
-    height:15vh;
+    height:auto;
     background-color: rgba(0, 0,0, 0.8);
     background-blend-mode: overlay;
     padding: 0px 100px;
